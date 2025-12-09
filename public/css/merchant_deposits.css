@@ -1,0 +1,253 @@
+/* ------------------------- */
+/*         GLOBAL            */
+/* ------------------------- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background: #f4f6fb;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    padding: 30px 40px;
+    margin-left: 260px; 
+}
+
+/* ------------------------- */
+/*         TITRE             */
+/* ------------------------- */
+h2 {
+    margin-bottom: 20px;
+    color: #2b3a9a;
+    font-weight: 700;
+}
+
+/* ------------------------- */
+/*     FILTRE/RECHERCHE      */
+/* ------------------------- */
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container input,
+.search-container button,
+.search-container select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: #3a5bcc;
+}
+
+.search-container button {
+    background: #3a5bcc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.search-container button:hover {
+    background: #2b4ec8;
+}
+
+.filter-perpage {
+    width: 30px;
+}
+
+/* ------------------------- */
+/*         TABLEAUX          */
+/* ------------------------- */
+.table-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background: #f1f3f6;
+    font-weight: 600;
+    color: #555;
+}
+
+tr:hover {
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+/* Montants négatifs */
+.amount-negative {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* ------------------------- */
+/*      LIGNE DETAILS        */
+/* ------------------------- */
+.details {
+    display: none;
+    background: #fafafa;
+}
+
+.details table {
+    margin-top: 0;
+    border: none;
+}
+
+.details th,
+.details td {
+    border: none;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.toggle-details {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ------------------------- */
+/*        PAGINATION         */
+/* ------------------------- */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.pagination a {
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #3a5bcc;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.pagination a.active {
+    background: #3a5bcc;
+    color: #fff;
+    font-weight: bold;
+}
+
+.pagination a:hover:not(.active) {
+    border-color: #3a5bcc;
+}
+
+/* ------------------------- */
+/*       EXPORT DROPDOWN     */
+/* ------------------------- */
+
+.export-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 4px; 
+    transition: color 0.2s;
+}
+
+.dropdown-toggle:hover {
+    color: #0d6efd;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 100px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.dropdown-menu form button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.dropdown-menu form button:hover {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+
+.export-details {
+    margin-bottom: 12px;
+    text-align: right;
+}
+
+.export-details form {
+    display: inline-flex;
+    gap: 6px;
+}
+
+.export-details button {
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.export-details button:hover {
+    background: #0a58ca;
+}
+
+.export-details button:active {
+    transform: scale(0.95);
+}

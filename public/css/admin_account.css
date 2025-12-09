@@ -1,0 +1,66 @@
+/* ------------------------- */
+/*     STYLES GLOBAUX        */
+/* ------------------------- */
+
+body {
+    font-family:'Roboto',sans-serif; 
+    background:#f3f4f6; 
+    display:flex; 
+    min-height:100vh; 
+    color:#1f2937;
+}
+
+/* ------------------------- */
+/*    CONTENUE PRINCIPAL     */
+/* ------------------------- */
+
+.main {
+    flex:1; 
+    padding:30px 40px; 
+    margin-left:220px;
+}
+
+h1 { 
+    color: #2b4ec8;
+}
+
+/* ------------------------- */
+/*       TABLEAUX            */
+/* ------------------------- */
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background: #fff; 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+th, td { 
+    padding: 10px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+}
+
+th { 
+    background: #3a5bcc; 
+    color: #fff; 
+}
+
+tr:hover { 
+    background: #f1f1f1; 
+}
+
+/* ------------------------- */
+/*       STATUTS             */
+/* ------------------------- */
+
+.status-active { 
+    color: green; 
+    font-weight: bold; 
+}
+
+.status-inactive { 
+    color: red; 
+    font-weight: bold; 
+}

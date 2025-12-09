@@ -1,0 +1,156 @@
+/* ------------------------- */
+/*    STYLES GLOBAUX         */
+/* ------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #2b4ec8, #6c8cf1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* ------------------------- */
+/*     FOND DE CONNEXION     */
+/* ------------------------- */
+.login-card {
+position: relative;
+    width: 380px;
+    background: #fff;
+    padding: 2.5rem 2.2rem;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to   {opacity: 1; transform: translateY(0);}
+}
+
+/* ------------------------- */
+/*       LOGO / TITRE        */
+/* ------------------------- */
+.logo-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo-container img {
+    width: 200px;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2b4ec8;
+    margin-bottom: 1.5rem;
+}
+
+/* ------------------------- */
+/*       FORMULAIRE          */
+/* ------------------------- */
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #2b4ec8;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.85rem 45px 0.85rem 45px;
+    border-radius: 12px;
+    border: 1.8px solid #ccd3f5;
+    background-color: #f7f8ff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #2b4ec8;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(43, 78, 200, 0.25);
+}
+
+/* ------------------------- */
+/*      ERREUR MESSAGE       */
+/* ------------------------- */
+.error-message {
+    background: #ffe5e5;
+    color: #b10000;
+    padding: 0.8rem 1rem;
+    border-left: 4px solid #e00000;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.4s ease;
+}
+
+/* ------------------------- */
+/*   BOUTTON DE CONNEXION    */
+/* ------------------------- */
+.btn-login {
+    width: 100%;
+    padding: 0.95rem;
+    background: #2b4ec8;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: 0.2s;
+    box-shadow: 0 6px 18px rgba(43,78,200,0.25);
+}
+
+.btn-login:hover {
+    background: #1f3ea4;
+}
+
+/* ------------------------- */
+/*        LIEN MDP OUBLIÉ    */
+/* ------------------------- */
+.forgot {
+    text-align: right;
+    margin-top: 0.4rem;
+}
+
+.forgot a {
+    color: #e03b3b;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.forgot a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------- */
+/*         RESPONSIVITÉ      */
+/* ------------------------- */
+@media (max-width: 420px) {
+    .login-card {
+        width: 100%;
+        padding: 2rem;
+    }
+}

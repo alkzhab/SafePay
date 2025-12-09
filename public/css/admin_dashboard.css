@@ -1,0 +1,98 @@
+/* ------------------------- */
+/*      STYLES GLOBAUX       */
+/* ------------------------- */
+
+body {
+    margin:0; 
+    font-family:'Roboto',sans-serif; 
+    display:flex; 
+    background:#f4f6f9; 
+    min-height:100vh;
+}
+
+/* ------------------------- */
+/*    CONTENUE PRINCIPAL     */
+/* ------------------------- */
+
+.main {
+    flex:1; 
+    padding:30px 40px; 
+    margin-left:220px; 
+    display:flex; 
+    gap:20px;
+}
+
+/* ------------------------- */
+/*         REQUETES          */
+/* ------------------------- */
+
+.requetes, 
+.actions { 
+    background:#fff; 
+    padding:20px; 
+    border-radius:8px; 
+    flex:1;
+    overflow:auto; 
+    max-height:90vh; 
+}
+
+h2 { 
+    color:#2b4ec8; 
+    margin-bottom:10px; 
+}
+
+/* ------------------------- */
+/*     FORMULAIRES           */
+/* ------------------------- */
+
+input, select, button { 
+    width:100%; 
+    padding:8px; 
+    margin:5px 0; 
+    border-radius:5px; 
+    border:1px solid #ccc; 
+}
+
+button { 
+    background:#2b4ec8; 
+    color:#fff; 
+    border:none; 
+    cursor:pointer; 
+}
+
+button:hover { 
+    background:#1f3ea4; 
+}
+
+.alert { 
+    padding:10px; 
+    margin-bottom:10px; 
+    border-left:4px solid #2b4ec8; 
+    background:#e8f4ff; 
+}
+
+.requete-item { 
+    padding:5px; 
+    border-bottom:1px solid #ddd; 
+    border:1px solid #ccc; 
+    padding:10px; 
+    margin-bottom:10px; 
+    border-radius:8px;
+}
+
+.btn {
+    background:#2ecc71;
+    color:#fff;
+    padding:5px 10px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.form-valide {
+    margin-top:5px;
+}
+
+.form-admin {
+    margin-top:10px;
+}

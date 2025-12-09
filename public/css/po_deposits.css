@@ -1,0 +1,267 @@
+/* ------------------------- */
+/*      STYLES GLOBAUX       */
+/* ------------------------- */
+
+body {
+    font-family:'Roboto',sans-serif; 
+    background:#f3f4f6; 
+    display:flex; 
+    min-height:100vh; 
+    color:#1f2937;
+}
+
+/* ------------------------- */
+/*    CONTENUE PRINCIPAL     */
+/* ------------------------- */
+
+.main {
+    flex:1; 
+    padding:30px 40px; 
+    margin-left:220px;
+}
+
+h2 {
+    font-size:1.8rem; 
+    margin-bottom:20px; 
+    font-weight:700;
+}
+
+/* ------------------------- */
+/*       CARTES KPI          */
+/* ------------------------- */
+
+.kpi-row {
+    display:flex; 
+    gap:20px; 
+    flex-wrap:wrap; 
+    margin-bottom:30px;
+}
+
+.kpi-card {
+    flex:1; 
+    background:#fff; 
+    padding:20px; 
+    border-radius:12px; 
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+    text-align:center;
+}
+
+.kpi-card h3 {
+    font-size:1.4rem; 
+    font-weight:700; 
+    margin-bottom:5px;
+}
+
+.kpi-card p {
+    font-size:0.95rem; 
+    color:#6b7280;
+}
+
+/* ------------------------- */
+/*       FILTRAGES           */
+/* ------------------------- */
+
+.filters {
+    display:flex; 
+    gap:15px; 
+    margin-bottom:30px; 
+    flex-wrap:wrap;
+}
+
+.filters input, 
+.filters select, 
+.filters button {
+    padding:10px 15px; 
+    border-radius:8px; 
+    border:1px solid #d1d5db;
+    font-size:0.95rem;
+}
+
+.filters button {
+    background:#3b82f6; 
+    color:white; 
+    border:none; 
+    cursor:pointer; 
+    transition:0.3s;
+}
+
+.filters button:hover {
+    background:#2563eb;
+}
+
+/* ------------------------- */
+/*        TABLEAUX           */
+/* ------------------------- */
+
+.table-container {
+    background:#fff; 
+    padding:20px; 
+    border-radius:12px; 
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+table {
+    width:100%; 
+    border-collapse:collapse; 
+    font-size:0.95rem;
+}
+
+th, td {
+    padding:12px 10px; 
+    text-align:left; 
+    border-bottom:1px solid #e5e7eb;
+}
+
+thead th {
+    background:#f3f4f6; 
+    font-weight:500;
+}
+
+tr:hover {
+    background:#f9fafb; 
+    cursor:pointer;
+}
+
+.amount-negative {
+    color:red; 
+    font-weight:600;
+}
+
+/* ------------------------- */
+/*      LIGNE DETAILS        */
+/* ------------------------- */
+
+.details {
+    display:none; 
+    background:#fafafa;
+}
+
+.details table {
+    margin-top:0; 
+    border:none;
+}
+
+.details th, 
+.details td {
+    border:none; 
+    padding:8px; 
+    font-size:0.9rem;
+}
+
+/* ------------------------- */
+/*       RESPONSIVE          */
+/* ------------------------- */
+
+/* Responsive */
+@media(max-width:1024px){
+    .main {
+        margin-left:0; 
+        padding:20px;
+    }
+    .content-row, 
+    .kpi-row {
+        flex-direction:column;
+    }
+}
+
+/* ------------------------- */
+/*      TOGGLE DETAILS       */
+/* ------------------------- */
+
+.toggle-details {
+    cursor:pointer; 
+    font-weight:bold; 
+    font-size:16px;
+}
+
+/* ------------------------- */
+/*       EXPORT BUTTON       */
+/* ------------------------- */
+
+.export-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s;
+}
+
+.dropdown-toggle:hover {
+    color: #0d6efd;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 100px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.dropdown-menu form button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.dropdown-menu form button:hover {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+
+.export-details {
+    margin-bottom: 12px;
+    text-align: right;
+}
+
+.export-details form {
+    display: inline-flex;
+    gap: 6px;
+}
+
+.export-details button {
+    background: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.export-details button:hover {
+    background: #0a58ca;
+}
+
+.export-details button:active {
+    transform: scale(0.95);
+}
